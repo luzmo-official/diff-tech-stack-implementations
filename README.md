@@ -8,6 +8,8 @@ This repo contains example implementations of [Luzmo](https://www.luzmo.com/) em
 | --- | --- | --- |
 | [py-and-react](./py-and-react) | Python (FastAPI) | React (Vite) |
 | [py-and-angular](./py-and-angular) | Python (Django) | Angular |
+| [node-and-react](./node-and-react) | Node.js (Express) | React (Vite) |
+| [node-and-angular](./node-and-angular) | Node.js (Express) | Angular |
 
 ## Quick Start (py-and-react)
 
@@ -55,6 +57,56 @@ The API runs on `http://localhost:8000`.
 
 ```bash
 cd py-and-angular/frontend
+npm install
+ng serve
+```
+
+The app runs on `http://localhost:4200`. API requests are proxied to the backend automatically.
+
+> All Luzmo credentials and server URLs are managed in the backend `.env` — no frontend config needed.
+
+## Quick Start (node-and-react)
+
+### Backend
+
+```bash
+cd node-and-react/backend
+npm install
+cp .env.example .env   # fill in your Luzmo credentials
+node server.js
+```
+
+The API runs on `http://localhost:8000`.
+
+### Frontend
+
+```bash
+cd node-and-react/frontend
+npm install
+npm run dev
+```
+
+The app runs on `http://localhost:5173`. API requests are proxied to the backend automatically.
+
+> All Luzmo credentials and server URLs are managed in the backend `.env` — no frontend config needed.
+
+## Quick Start (node-and-angular)
+
+### Backend
+
+```bash
+cd node-and-angular/backend
+npm install
+cp .env.example .env   # fill in your Luzmo credentials
+node server.js
+```
+
+The API runs on `http://localhost:8000`.
+
+### Frontend
+
+```bash
+cd node-and-angular/frontend
 npm install
 ng serve
 ```

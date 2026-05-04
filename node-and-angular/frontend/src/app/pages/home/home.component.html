@@ -1,0 +1,23 @@
+<header class="logo">
+  <h1>Dunder Mifflin Data</h1>
+  <p>Built with Luzmo &bull; Scranton Branch Analytics</p>
+  <div class="subtitle">SELECT A USER PROFILE</div>
+</header>
+
+<main class="profiles">
+  @for (p of personas; track p.role) {
+    <a class="card" [routerLink]="['/dashboard']" [queryParams]="{ role: p.role }">
+      <img class="avatar" [src]="p.avatar" [alt]="p.name" />
+      <p class="name">{{ p.name }}</p>
+      <p class="role">{{ p.title }}</p>
+    </a>
+  }
+</main>
+
+<footer class="chat">
+  <div class="chat-bubble">
+    Welcome! Choose your persona to unlock the right dashboards. Sales
+    reps see only their own client accounts.
+  </div>
+  <div class="chat-button">💬</div>
+</footer>
