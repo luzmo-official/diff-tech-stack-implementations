@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <h2>Here's your Dashboard, {{ name }}</h2>
+  <a class="switch-profile" routerLink="/">Switch Profile</a>
+</nav>
+
+<div class="embed-container">
+  @if (error) {
+    <div class="embed-loading">
+      <p>Failed to load dashboard: {{ error }}</p>
+    </div>
+  }
+
+  @if (!embedConfig && !error) {
+    <div class="embed-loading">
+      <p>Loading dashboard...</p>
+    </div>
+  }
+
+  @if (embedConfig) {
+    <luzmo-dashboard
+      [dashboardId]="dashboardId"
+      [authKey]="embedConfig.authKey"
+      [authToken]="embedConfig.authToken"
+      [appServer]="embedConfig.appServer"
+      [apiHost]="embedConfig.apiHost">
+    </luzmo-dashboard>
+  }
+</div>
