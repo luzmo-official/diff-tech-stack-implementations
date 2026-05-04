@@ -13,9 +13,10 @@ LUZMO_API_TOKEN = os.environ["LUZMO_API_TOKEN"]
 LUZMO_API_HOST = os.environ.get("LUZMO_API_HOST", "https://api.luzmo.com")
 LUZMO_APP_SERVER = os.environ.get("LUZMO_APP_SERVER", "https://app.luzmo.com")
 LUZMO_COLLECTION_ID = os.environ["LUZMO_COLLECTION_ID"]
-LUZMO_DASHBOARD_ID = os.environ["LUZMO_DASHBOARD_ID"]
 
 client = Luzmo(LUZMO_API_KEY, LUZMO_API_TOKEN, LUZMO_API_HOST)
+
+SALES_REPS = {"dwight", "jim", "phyllis", "stanley", "andy"}
 
 ROLE_PROFILES = {
     "wallace": {
@@ -34,6 +35,30 @@ ROLE_PROFILES = {
         "username": "dwight.schrute",
         "name": "Dwight Schrute",
         "email": "dwight.schrute@dundermifflin.com",
+        "suborganization": "Scranton",
+    },
+    "jim": {
+        "username": "jim.halpert",
+        "name": "Jim Halpert",
+        "email": "jim.halpert@dundermifflin.com",
+        "suborganization": "Scranton",
+    },
+    "phyllis": {
+        "username": "phyllis.vance",
+        "name": "Phyllis Vance",
+        "email": "phyllis.vance@dundermifflin.com",
+        "suborganization": "Scranton",
+    },
+    "stanley": {
+        "username": "stanley.hudson",
+        "name": "Stanley Hudson",
+        "email": "stanley.hudson@dundermifflin.com",
+        "suborganization": "Scranton",
+    },
+    "andy": {
+        "username": "andy.bernard",
+        "name": "Andy Bernard",
+        "email": "andy.bernard@dundermifflin.com",
         "suborganization": "Scranton",
     },
 }
@@ -59,28 +84,32 @@ async def create_embed_token(req: EmbedRequest):
         raise HTTPException(status_code=400, detail=f"Unknown role: {req.role}")
 
     try:
-        response = client.create(
-            "authorization",
-            {
-                "type": "embed",
-                "username": profile["username"],
-                "name": profile["name"],
-                "email": profile["email"],
-                "suborganization": profile["suborganization"],
-                "access": {
-                    "collections": [
-                        {
-                            "id": LUZMO_COLLECTION_ID,
-                            "inheritRights": "use",
-                        }
-                    ]
-                },
+        auth_payload = {
+            "type": "embed",
+            "username": profile["username"],
+            "name": profile["name"],
+            "email": profile["email"],
+            "suborganization": profile["suborganization"],
+            "access": {
+                "collections": [
+                    {
+                        "id": LUZMO_COLLECTION_ID,
+                        "inheritRights": "use",
+                    }
+                ]
             },
-        )
+        }
+
+        if req.role in SALES_REPS:
+            auth_payload["parameter_overrides"] = {
+                "salesperson": profile["name"],
+            }
+
+        response = client.create("authorization", auth_payload)
+
         return {
             "authKey": response["id"],
             "authToken": response["token"],
-            "dashboardId": LUZMO_DASHBOARD_ID,
             "appServer": LUZMO_APP_SERVER,
             "apiHost": LUZMO_API_HOST,
         }

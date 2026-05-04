@@ -2,38 +2,31 @@ import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { LuzmoDashboardComponent } from '@luzmo/react-embed';
 
-const roleConfig = {
-  wallace: {
-    name: 'David Wallace \u2022 Corporate Overview',
-    desc: 'Big-picture KPIs: revenue, growth, branch comparisons.',
-    kpis: ['Company Revenue', 'Top Branches', 'YoY Growth', 'Profit Margin'],
-  },
-  michael: {
-    name: 'Michael Scott \u2022 Regional Manager',
-    desc: 'Scranton vs other branches. Trends, vibes, and bragging rights.',
-    kpis: [
-      'Branch Rankings',
-      'Regional Sales Trend',
-      'Customer Retention',
-      "That's what she said",
-    ],
-  },
-  dwight: {
-    name: 'Dwight Schrute \u2022 Top Sales Rep',
-    desc: 'Daily performance, best sellers, personal scoreboards.',
-    kpis: [
-      "Today's Sales",
-      'Top Products',
-      'Leaderboard',
-      'Beets Sold (Secret KPI)',
-    ],
-  },
+const DASHBOARD_IDS = {
+  wallace: '9743e36d-7d9c-4703-bf4c-f347cb85169f',
+  michael: '3c47cf45-fcb6-4920-a5a8-b79852519552',
+  sales: 'e43545ae-353b-46d8-b96d-bc882e0aaf33',
+};
+
+const SALES_REPS = new Set(['dwight', 'jim', 'phyllis', 'stanley', 'andy']);
+
+const NAMES = {
+  wallace: 'David',
+  michael: 'Michael',
+  dwight: 'Dwight',
+  jim: 'Jim',
+  phyllis: 'Phyllis',
+  stanley: 'Stanley',
+  andy: 'Andy',
 };
 
 export default function Dashboard() {
   const [searchParams] = useSearchParams();
   const role = searchParams.get('role') || 'wallace';
-  const config = roleConfig[role] || roleConfig.wallace;
+  const name = NAMES[role] || 'User';
+  const dashboardId = SALES_REPS.has(role)
+    ? DASHBOARD_IDS.sales
+    : DASHBOARD_IDS[role] || DASHBOARD_IDS.wallace;
 
   const [embedConfig, setEmbedConfig] = useState(null);
   const [error, setError] = useState(null);
@@ -58,53 +51,35 @@ export default function Dashboard() {
   return (
     <>
       <nav className="navbar">
-        <h2>Dashboard</h2>
+        <h2>Here's your Dashboard, {name}</h2>
         <Link className="switch-profile" to="/">
           Switch Profile
         </Link>
       </nav>
 
-      <section className="role-banner">
-        <h1>{config.name}</h1>
-        <p>{config.desc}</p>
-      </section>
-
-      <section className="kpis">
-        {config.kpis.map((kpi) => (
-          <div key={kpi} className="kpi-card">
-            <h3>{kpi}</h3>
-            <p>Metric placeholder</p>
+      <div className="embed-container">
+        {error && (
+          <div className="embed-loading">
+            <p>Failed to load dashboard: {error}</p>
           </div>
-        ))}
-      </section>
+        )}
 
-      <section className="dashboard-section">
-        <h2>Embedded Luzmo Dashboard</h2>
+        {!embedConfig && !error && (
+          <div className="embed-loading">
+            <p>Loading dashboard...</p>
+          </div>
+        )}
 
-        <div className="embed-container">
-          {error && (
-            <div className="embed-loading">
-              <p>Failed to load dashboard: {error}</p>
-            </div>
-          )}
-
-          {!embedConfig && !error && (
-            <div className="embed-loading">
-              <p>Loading dashboard...</p>
-            </div>
-          )}
-
-          {embedConfig && (
-            <LuzmoDashboardComponent
-              appServer={embedConfig.appServer}
-              apiHost={embedConfig.apiHost}
-              authKey={embedConfig.authKey}
-              authToken={embedConfig.authToken}
-              dashboardId={embedConfig.dashboardId}
-            />
-          )}
-        </div>
-      </section>
+        {embedConfig && (
+          <LuzmoDashboardComponent
+            appServer={embedConfig.appServer}
+            apiHost={embedConfig.apiHost}
+            authKey={embedConfig.authKey}
+            authToken={embedConfig.authToken}
+            dashboardId={dashboardId}
+          />
+        )}
+      </div>
     </>
   );
 }
