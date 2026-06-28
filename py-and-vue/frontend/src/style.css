@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #1c1c1c;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Home - Header */
+.logo {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.logo h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.logo p {
+  opacity: 0.7;
+}
+
+.subtitle {
+  margin-top: 25px;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  letter-spacing: 2px;
+}
+
+/* Home - Persona Cards */
+.profiles {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+}
+
+.card {
+  width: 260px;
+  background: #2a2a2a;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #f4a261;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.1rem;
+  margin: 15px 0 5px;
+}
+
+.role {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+/* Dashboard - Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #252525;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.switch-profile {
+  color: #f4a261;
+  text-decoration: none;
+}
+
+.switch-profile:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard - Role Banner */
+.role-banner {
+  padding: 30px 40px;
+}
+
+.role-banner h1 {
+  margin: 0 0 8px;
+}
+
+.role-banner p {
+  margin: 0;
+  opacity: 0.7;
+}
+
+/* Dashboard - KPI Grid */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.kpi-card {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.kpi-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.kpi-card p {
+  margin: 0;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+/* Dashboard - Embed Section */
+.dashboard-section {
+  padding: 30px 40px;
+}
+
+.dashboard-section h2 {
+  margin: 0 0 20px;
+}
+
+.embed-container {
+  background: #111;
+  border-radius: 16px;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.embed-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  opacity: 0.5;
+}
+
+/* Chat Bubble */
+.chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat-bubble {
+  background: white;
+  color: black;
+  padding: 14px;
+  border-radius: 14px;
+  width: 240px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.chat-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #4c6fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+}
