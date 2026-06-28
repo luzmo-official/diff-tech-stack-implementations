@@ -1,0 +1,56 @@
+salesperson,client,contact_name,contact_email,contract_start,contract_end,annual_value,product_category,last_order_date,last_order_value,orders_ytd,satisfaction_score,upsell_opportunity,notes
+Dwight Schrute,Lackawanna County,Tom Brennan,tbrennan@lacka.org,2023-06-01,2025-05-31,54000,Premium Paper,2025-05-12,4800,11,9.2,High,Renewal upcoming — push multi-year deal
+Dwight Schrute,Blue Cross of NEPA,Rachel Gomez,rgomez@bcnepa.com,2024-01-01,2025-12-31,68000,Premium Paper,2025-06-01,6200,12,9.5,Medium,Largest account — maintain white-glove service
+Dwight Schrute,Dunmore High School,Linda Hartley,lhartley@dunmore.k12.pa.us,2023-09-01,2025-08-31,24800,Standard Paper,2025-04-28,2100,9,8.7,Low,Seasonal ordering peaks in Aug/Jan
+Dwight Schrute,Benco Dental,Carlos Rivera,crivera@benco.com,2024-04-01,2026-03-31,62400,Premium Paper,2025-05-20,5400,10,9.1,High,Exploring specialty dental forms
+Dwight Schrute,Tobyhanna Army Depot,Sgt. Mike Pellegrino,mpellegrino@army.mil,2024-05-01,2026-04-30,53600,Standard Paper,2025-05-15,4600,10,8.9,Medium,Government contract — strict delivery windows
+Dwight Schrute,Gertrude Hawk Chocolates,Brenda Lipinski,blipinski@gertrudehawk.com,2024-06-01,2025-05-31,29000,Specialty Products,2025-04-10,3200,8,8.4,High,Gift box inserts and seasonal packaging
+Dwight Schrute,Procter & Gamble NEPA,David Kim,dkim@pg.com,2024-07-01,2026-06-30,59200,Premium Paper,2025-06-05,5100,11,9.3,High,Expanding to their Mehoopany plant
+Dwight Schrute,Keystone Sanitary Landfill,Joe Nardelli,jnardelli@keystonefill.com,2024-08-01,2025-07-31,22400,Standard Paper,2025-03-22,1900,7,7.8,Low,Basic office supply — low growth potential
+Dwight Schrute,Cintas NEPA,Amanda Foster,afoster@cintas.com,2024-10-01,2026-09-30,70400,Premium Paper,2025-05-28,6100,8,9.4,High,Wants custom branded letterhead
+Dwight Schrute,Pennsylvania American Water,Bill Stokes,bstokes@amwater.com,2024-11-01,2026-10-31,49200,Premium Paper,2025-06-10,4200,7,8.8,Medium,Multi-site delivery across NEPA
+Dwight Schrute,Sanofi Pasteur,Dr. Helen Park,hpark@sanofi.com,2024-12-01,2026-11-30,37800,Specialty Products,2025-05-05,3400,6,9.0,High,Lab notebook paper and cleanroom forms
+Dwight Schrute,RE/MAX Scranton,Denise Kovalchik,dkovalchik@remax.net,2025-01-01,2026-12-31,60200,Premium Paper,2025-06-02,5500,6,9.1,Medium,Brochure and flyer stock doing well
+Dwight Schrute,Commonwealth Health,Nancy Boyle,nboyle@commonwealthhealth.net,2025-02-01,2027-01-31,45600,Premium Paper,2025-05-18,4000,5,8.6,High,Three hospital campuses — room to grow
+Dwight Schrute,Lockheed Martin NEPA,James Richter,jrichter@lmco.com,2025-04-01,2027-03-31,77000,Premium Paper,2025-06-08,6800,3,9.6,High,Largest new win — classified doc paper
+Dwight Schrute,Globe Store Lofts,Sarah Delaney,sdelaney@globelofts.com,2025-05-01,2026-04-30,31200,Standard Paper,2025-06-01,2700,2,8.2,Low,Small office — steady but limited scale
+Jim Halpert,Scranton White Pages,Gary Sullivan,gsullivan@scrantonwp.com,2023-03-01,2025-02-28,48000,Premium Paper,2025-05-22,4300,11,9.0,Medium,Long-standing account — easy maintenance
+Jim Halpert,University of Scranton,Fr. Patrick Mahon,pmahon@scranton.edu,2023-08-01,2025-07-31,72000,Premium Paper,2025-06-04,6500,12,9.4,High,Academic year bulk ordering — big Q3
+Jim Halpert,Geisinger Health Plan,Karen Wu,kwu@geisinger.org,2024-02-01,2026-01-31,65000,Premium Paper,2025-05-30,5700,10,9.2,High,Multi-location — expanding to Wilkes-Barre
+Jim Halpert,PNC Bank Scranton,Derek Marshall,dmarshall@pnc.com,2024-05-01,2026-04-30,58400,Premium Paper,2025-05-25,5000,9,8.9,Medium,Statement paper and envelopes
+Jim Halpert,Scranton Times-Tribune,Monica Petrillo,mpetrillo@thetimes-tribune.com,2024-07-01,2026-06-30,82000,Specialty Products,2025-06-08,7200,10,9.5,High,Newsprint and insert paper — high volume
+Jim Halpert,Montage Mountain Resort,Chris Bianchi,cbianchi@montagemountain.com,2024-09-01,2025-08-31,33600,Standard Paper,2025-04-20,2900,8,8.5,Low,Seasonal — ski brochures and event flyers
+Jim Halpert,MetLife Scranton,Joan Pressman,jpressman@metlife.com,2024-11-01,2026-10-31,51200,Premium Paper,2025-05-14,4500,7,8.8,Medium,Claims forms and policy documents
+Jim Halpert,Steamtown Mall,Rick Angeli,rangeli@steamtownmall.com,2025-01-01,2026-12-31,27000,Standard Paper,2025-05-02,2400,5,8.1,Low,Directory and promo printing
+Jim Halpert,Hershey Corp NEPA,Tina Obrecht,tobrecht@hersheys.com,2025-03-01,2027-02-28,69000,Premium Paper,2025-06-06,6000,4,9.3,High,Distribution center — packaging paper
+Jim Halpert,Viewmont Mall,Paula Shields,pshields@viewmont.com,2025-05-01,2026-04-30,25000,Standard Paper,2025-06-01,2200,2,8.0,Low,Small tenant directory printing
+Phyllis Vance,Scranton School District,Maria Torres,mtorres@scrantonsd.org,2023-05-01,2025-04-30,42000,Standard Paper,2025-05-10,3800,11,8.8,Medium,Back-to-school rush every August
+Phyllis Vance,Allied Services,Diane Kresge,dkresge@allied-services.org,2023-10-01,2025-09-30,55000,Premium Paper,2025-05-28,4900,10,9.1,High,Healthcare forms and patient intake packets
+Phyllis Vance,Tobyhanna Township,Paul Revello,prevello@tobyhannatwp.gov,2024-03-01,2026-02-28,28000,Standard Paper,2025-04-15,2500,9,8.5,Low,Municipal forms — reliable but small
+Phyllis Vance,Prudential Scranton,Linda Caputo,lcaputo@prudential.com,2024-06-01,2026-05-31,61000,Premium Paper,2025-06-02,5300,9,9.0,High,Policy documents and client mailers
+Phyllis Vance,Wright Center for Health,George Hanna,ghanna@thewrightcenter.org,2024-08-01,2026-07-31,47000,Premium Paper,2025-05-20,4100,8,8.9,Medium,Multi-site medical forms
+Phyllis Vance,Boscov's NEPA,Angela Rizzo,arizzo@boscovs.com,2024-10-01,2025-09-30,36000,Specialty Products,2025-04-30,3100,7,8.6,Medium,In-store signage and seasonal catalogs
+Phyllis Vance,Fidelity Bank,Stephen Grant,sgrant@fidelitybank.com,2024-12-01,2026-11-30,52000,Premium Paper,2025-05-18,4500,6,9.2,High,Expanding to 4 new branch locations
+Phyllis Vance,Chamberlain Manufacturing,Ron Kutz,rkutz@chamberlainmfg.com,2025-02-01,2027-01-31,40000,Standard Paper,2025-06-05,3500,5,8.4,Medium,Floor plans and spec sheets
+Phyllis Vance,Kane Logistics,Beth Turano,bturano@kanelogistics.com,2025-04-01,2027-03-31,44000,Premium Paper,2025-06-09,3800,3,8.7,High,Shipping labels and warehouse forms
+Phyllis Vance,Mohegan Sun Pocono,Steve Cardone,scardone@mohegansunpocono.com,2025-05-01,2026-04-30,58000,Specialty Products,2025-06-01,5000,2,9.0,High,Event programs and promotional materials
+Stanley Hudson,Scranton Iron Furnaces Trust,Ed Barletta,ebarletta@scrantoniron.org,2023-04-01,2025-03-31,19500,Standard Paper,2024-12-15,1700,6,7.6,Low,Historical society — minimal needs
+Stanley Hudson,Delta Medix,Janet Chen,jchen@deltamedix.com,2023-11-01,2025-10-31,53000,Premium Paper,2025-05-16,4600,10,8.8,Medium,Physician referral forms and letterhead
+Stanley Hudson,Citizens Savings Bank,Fred Dominick,fdominick@citizenssavings.com,2024-01-01,2025-12-31,38000,Premium Paper,2025-05-08,3300,9,8.5,Medium,Quarterly statement runs
+Stanley Hudson,Scranton Wilkes-Barre RailRiders,Mike Cummings,mcummings@swbrailriders.com,2024-04-01,2026-03-31,31000,Specialty Products,2025-04-22,2700,8,8.3,Low,Season ticket mailers and programs
+Stanley Hudson,Community Medical Center,Rosa Gutierrez,rgutierrez@cmchealth.org,2024-06-01,2026-05-31,67000,Premium Paper,2025-06-03,5800,9,9.1,High,Largest healthcare client — big growth
+Stanley Hudson,Schott NYC,Larry Friedman,lfriedman@schottnyc.com,2024-08-01,2025-07-31,26000,Standard Paper,2025-03-28,2300,7,7.9,Low,Warehouse packing slips
+Stanley Hudson,PPL Electric NEPA,Ann Marie Volk,avolk@pplweb.com,2024-10-01,2026-09-30,59000,Premium Paper,2025-05-22,5100,7,9.0,High,Utility bills and customer notices
+Stanley Hudson,Nittany Energy,Craig Loomis,cloomis@nittanyenergy.com,2025-01-01,2026-12-31,34000,Standard Paper,2025-05-04,2900,5,8.2,Medium,Service forms and invoices
+Stanley Hudson,Weis Markets Distribution,Pam Zelinski,pzelinski@weismarkets.com,2025-03-01,2027-02-28,72000,Premium Paper,2025-06-07,6300,4,9.4,High,Distribution center — packaging and labels
+Stanley Hudson,Wilkes University,Prof. Alan Karas,akaras@wilkes.edu,2025-05-01,2026-04-30,29000,Standard Paper,2025-06-01,2500,2,8.1,Low,Academic printing — course packs
+Andy Bernard,Marywood University,Sister Claire Dowd,cdowd@marywood.edu,2023-07-01,2025-06-30,35000,Standard Paper,2025-05-10,3000,10,8.6,Medium,Strong alumni mailer program
+Andy Bernard,Scranton Cultural Center,Evelyn Matise,ematise@scrantoncc.org,2023-12-01,2025-11-30,22000,Specialty Products,2025-04-18,1900,8,8.2,Low,Event programs and fundraiser inserts
+Andy Bernard,M&T Bank Scranton,Phil McAndrew,pmcandrew@mtb.com,2024-02-01,2026-01-31,57000,Premium Paper,2025-05-26,4900,9,9.0,High,Mortgage docs and branch supplies
+Andy Bernard,Spectrum NEPA,Yolanda Price,yprice@charter.com,2024-05-01,2026-04-30,63000,Premium Paper,2025-06-04,5500,9,9.2,High,Billing inserts and marketing flyers
+Andy Bernard,Johnson College,Dave Petrowski,dpetrowski@johnson.edu,2024-07-01,2025-06-30,26000,Standard Paper,2025-04-12,2300,8,8.4,Low,Small college — enrollment season spikes
+Andy Bernard,Wayne Memorial Hospital,Dr. Nina Shah,nshah@wmh.org,2024-09-01,2026-08-31,48000,Premium Paper,2025-05-19,4200,7,8.7,Medium,Patient forms and lab reports
+Andy Bernard,Tunk Brewing Company,Matt Gilroy,mgilroy@tunkbrewing.com,2024-11-01,2025-10-31,18000,Specialty Products,2025-03-30,1600,6,8.0,Low,Labels and coasters — niche but fun
+Andy Bernard,Sordoni Construction,Jim Sordoni Jr.,jsordoni@sordoniconstruction.com,2025-01-01,2026-12-31,41000,Standard Paper,2025-05-08,3600,5,8.5,Medium,Blueprints and project binders
+Andy Bernard,McCarthy Tire Service,Colleen Flaherty,cflaherty@mccarthytire.com,2025-03-01,2027-02-28,55000,Premium Paper,2025-06-06,4800,4,9.1,High,Multi-location — expanding fast
+Andy Bernard,Mohegan Sun Arena,Keith Hyzinski,khyzinski@mohegansun.com,2025-05-01,2026-04-30,38000,Specialty Products,2025-06-01,3300,2,8.8,Medium,Concert and event ticket stock

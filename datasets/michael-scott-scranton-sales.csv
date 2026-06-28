@@ -1,0 +1,58 @@
+salesperson,client,deal_value,deal_status,product_category,date_closed,quarter,year
+Dwight Schrute,Lackawanna County,28500,Won,Premium Paper,2024-01-15,Q1,2024
+Dwight Schrute,Dunmore High School,12400,Won,Standard Paper,2024-01-22,Q1,2024
+Dwight Schrute,Blue Cross of NEPA,34000,Won,Premium Paper,2024-02-10,Q1,2024
+Jim Halpert,Scranton City Hall,18200,Won,Standard Paper,2024-01-18,Q1,2024
+Jim Halpert,Marywood University,22500,Won,Premium Paper,2024-02-25,Q1,2024
+Jim Halpert,Penn Paper,8500,Lost,Standard Paper,2024-03-12,Q1,2024
+Phyllis Vance,Allied Medical,15600,Won,Specialty Products,2024-01-30,Q1,2024
+Phyllis Vance,Scranton Rec Center,9200,Won,Standard Paper,2024-02-14,Q1,2024
+Stanley Hudson,Scranton Library,11000,Won,Standard Paper,2024-03-05,Q1,2024
+Stanley Hudson,Northeast Realty,7800,Lost,Standard Paper,2024-02-20,Q1,2024
+Andy Bernard,Geisinger Health,19300,Won,Premium Paper,2024-03-18,Q1,2024
+Andy Bernard,Montage Mountain Resort,6500,Won,Specialty Products,2024-03-22,Q1,2024
+Dwight Schrute,Benco Dental,31200,Won,Premium Paper,2024-04-08,Q2,2024
+Dwight Schrute,Tobyhanna Army Depot,26800,Won,Standard Paper,2024-05-15,Q2,2024
+Dwight Schrute,Gertrude Hawk Chocolates,14500,Won,Specialty Products,2024-06-02,Q2,2024
+Jim Halpert,University of Scranton,25000,Won,Premium Paper,2024-04-20,Q2,2024
+Jim Halpert,Steamtown Mall,16300,Won,Standard Paper,2024-05-10,Q2,2024
+Jim Halpert,Wayne Memorial Hospital,21000,Won,Premium Paper,2024-06-18,Q2,2024
+Phyllis Vance,Hershey Foods NEPA,18700,Won,Premium Paper,2024-04-25,Q2,2024
+Phyllis Vance,Viewmont Mall,10200,Won,Standard Paper,2024-05-28,Q2,2024
+Stanley Hudson,Scranton School District,13500,Won,Standard Paper,2024-05-05,Q2,2024
+Stanley Hudson,First Keystone Bank,8900,Lost,Standard Paper,2024-06-12,Q2,2024
+Andy Bernard,Mohegan Sun Arena,22100,Won,Premium Paper,2024-04-15,Q2,2024
+Andy Bernard,Pocono Medical Center,9800,Won,Specialty Products,2024-06-22,Q2,2024
+Dwight Schrute,Procter & Gamble NEPA,29600,Won,Premium Paper,2024-07-10,Q3,2024
+Dwight Schrute,Keystone Sanitary Landfill,11200,Won,Standard Paper,2024-08-05,Q3,2024
+Jim Halpert,Scranton Times-Tribune,17800,Won,Standard Paper,2024-07-22,Q3,2024
+Jim Halpert,King's College,20400,Won,Premium Paper,2024-08-18,Q3,2024
+Phyllis Vance,Boscov's Scranton,14100,Won,Standard Paper,2024-09-02,Q3,2024
+Stanley Hudson,Community Medical Center,9600,Won,Specialty Products,2024-08-15,Q3,2024
+Stanley Hudson,MetLife NEPA,7200,Lost,Standard Paper,2024-09-20,Q3,2024
+Andy Bernard,Toyota of Scranton,13800,Won,Standard Paper,2024-07-28,Q3,2024
+Dwight Schrute,Cintas NEPA,35200,Won,Premium Paper,2024-10-12,Q4,2024
+Dwight Schrute,Pennsylvania American Water,24600,Won,Premium Paper,2024-11-08,Q4,2024
+Dwight Schrute,Sanofi Pasteur,18900,Won,Specialty Products,2024-12-05,Q4,2024
+Jim Halpert,PNC Bank Scranton,27300,Won,Premium Paper,2024-10-25,Q4,2024
+Jim Halpert,Johnson College,15200,Won,Standard Paper,2024-11-18,Q4,2024
+Jim Halpert,Mercy Hospital,19800,Lost,Premium Paper,2024-12-10,Q4,2024
+Phyllis Vance,Wegmans NEPA,21400,Won,Premium Paper,2024-11-02,Q4,2024
+Phyllis Vance,Northeast Fiber,12600,Won,Specialty Products,2024-12-15,Q4,2024
+Stanley Hudson,Scranton Iron Furnaces,8400,Won,Standard Paper,2024-10-30,Q4,2024
+Andy Bernard,Tunk Brewing Co,11500,Won,Specialty Products,2024-11-22,Q4,2024
+Andy Bernard,Everhart Museum,7600,Won,Standard Paper,2024-12-20,Q4,2024
+Dwight Schrute,RE/MAX Scranton,30100,Won,Premium Paper,2025-01-14,Q1,2025
+Dwight Schrute,Commonwealth Health,22800,Won,Premium Paper,2025-02-18,Q1,2025
+Jim Halpert,Marywood University,24500,Won,Premium Paper,2025-01-28,Q1,2025
+Jim Halpert,Scranton Cultural Center,16700,Won,Standard Paper,2025-03-10,Q1,2025
+Phyllis Vance,WVIA Public Media,13900,Won,Specialty Products,2025-02-05,Q1,2025
+Stanley Hudson,Scranton Parking Authority,10100,Won,Standard Paper,2025-03-18,Q1,2025
+Andy Bernard,Dickson City Mall,17200,Won,Standard Paper,2025-01-22,Q1,2025
+Dwight Schrute,Lockheed Martin NEPA,38500,Won,Premium Paper,2025-04-08,Q2,2025
+Dwight Schrute,Globe Store Lofts,15600,Won,Standard Paper,2025-05-12,Q2,2025
+Jim Halpert,Geisinger CMC,26200,Won,Premium Paper,2025-04-22,Q2,2025
+Jim Halpert,Lackawanna Transit,13400,Won,Standard Paper,2025-05-30,Q2,2025
+Phyllis Vance,Fidelity Bank Scranton,19800,Won,Premium Paper,2025-04-15,Q2,2025
+Stanley Hudson,Northeast Credit Union,11700,Won,Standard Paper,2025-06-05,Q2,2025
+Andy Bernard,Montage Mountain Resort,14300,Won,Specialty Products,2025-05-20,Q2,2025

@@ -1,0 +1,16 @@
+client,contact_name,contact_email,contract_start,contract_end,annual_value,product_category,last_order_date,last_order_value,orders_ytd,satisfaction_score,upsell_opportunity,notes
+Lackawanna County,Tom Brennan,tbrennan@lacka.org,2023-06-01,2025-05-31,54000,Premium Paper,2025-05-12,4800,11,9.2,High,Renewal upcoming — push multi-year deal
+Blue Cross of NEPA,Rachel Gomez,rgomez@bcnepa.com,2024-01-01,2025-12-31,68000,Premium Paper,2025-06-01,6200,12,9.5,Medium,Largest account — maintain white-glove service
+Dunmore High School,Linda Hartley,lhartley@dunmore.k12.pa.us,2023-09-01,2025-08-31,24800,Standard Paper,2025-04-28,2100,9,8.7,Low,Seasonal ordering peaks in Aug/Jan
+Benco Dental,Carlos Rivera,crivera@benco.com,2024-04-01,2026-03-31,62400,Premium Paper,2025-05-20,5400,10,9.1,High,Exploring specialty dental forms
+Tobyhanna Army Depot,Sgt. Mike Pellegrino,mpellegrino@army.mil,2024-05-01,2026-04-30,53600,Standard Paper,2025-05-15,4600,10,8.9,Medium,Government contract — strict delivery windows
+Gertrude Hawk Chocolates,Brenda Lipinski,blipinski@gertrudehawk.com,2024-06-01,2025-05-31,29000,Specialty Products,2025-04-10,3200,8,8.4,High,Gift box inserts and seasonal packaging
+Procter & Gamble NEPA,David Kim,dkim@pg.com,2024-07-01,2026-06-30,59200,Premium Paper,2025-06-05,5100,11,9.3,High,Expanding to their Mehoopany plant
+Keystone Sanitary Landfill,Joe Nardelli,jnardelli@keystonefill.com,2024-08-01,2025-07-31,22400,Standard Paper,2025-03-22,1900,7,7.8,Low,Basic office supply — low growth potential
+Cintas NEPA,Amanda Foster,afoster@cintas.com,2024-10-01,2026-09-30,70400,Premium Paper,2025-05-28,6100,8,9.4,High,Wants custom branded letterhead
+Pennsylvania American Water,Bill Stokes,bstokes@amwater.com,2024-11-01,2026-10-31,49200,Premium Paper,2025-06-10,4200,7,8.8,Medium,Multi-site delivery across NEPA
+Sanofi Pasteur,Dr. Helen Park,hpark@sanofi.com,2024-12-01,2026-11-30,37800,Specialty Products,2025-05-05,3400,6,9.0,High,Lab notebook paper and cleanroom forms
+RE/MAX Scranton,Denise Kovalchik,dkovalchik@remax.net,2025-01-01,2026-12-31,60200,Premium Paper,2025-06-02,5500,6,9.1,Medium,Brochure and flyer stock doing well
+Commonwealth Health,Nancy Boyle,nboyle@commonwealthhealth.net,2025-02-01,2027-01-31,45600,Premium Paper,2025-05-18,4000,5,8.6,High,Three hospital campuses — room to grow
+Lockheed Martin NEPA,James Richter,jrichter@lmco.com,2025-04-01,2027-03-31,77000,Premium Paper,2025-06-08,6800,3,9.6,High,Largest new win — classified doc paper
+Globe Store Lofts,Sarah Delaney,sdelaney@globelofts.com,2025-05-01,2026-04-30,31200,Standard Paper,2025-06-01,2700,2,8.2,Low,Small office — steady but limited scale
