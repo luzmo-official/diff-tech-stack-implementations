@@ -17,6 +17,9 @@ This repo contains example implementations of [Luzmo](https://www.luzmo.com/) em
 
 Before getting started with any of the implementations, you need to set up the datasets and dashboards in your Luzmo account. Every implementation shares the same Luzmo backend, so this only needs to be done once.
 
+> [!NOTE]
+> This setup is **optional** — it just reproduces the demo exactly. You are free to bring your own datasets, dashboards, collections, and parameter filters instead. If you do, the one thing you must keep in sync is the **parameter override**: whatever parameter you filter your dataset on must match what the backend sends in `parameter_overrides`. See [Bring your own parameter filters](#bring-your-own-parameter-filters) for the exact files and lines to change.
+
 ### 1. Upload the sample datasets
 
 Upload the CSV files in the [datasets](./datasets) folder to Luzmo. The [Local file upload](https://academy.luzmo.com/article/3w4tyd4s) article outlines how to do so.
@@ -44,6 +47,21 @@ Uses the **Client-accounts** dataset. This is the most important one, because yo
 Add a `salesperson` metadata parameter to the dataset and a filter where `salesperson` equals that parameter. The backend then passes the signed-in persona's name into `parameter_overrides.salesperson` when creating the embed token, so sales reps are scoped to their own rows.
 
 ![Deals Overview dashboard](./assets/deals-overview-dashboard.png)
+
+#### Bring your own parameter filters
+
+If you set up your dataset with a **different** parameter name (e.g. `region`, `tenant_id`, `customer`), update the embed token payload in the backend so the key under `parameter_overrides` matches your parameter, and adjust the value to whatever you want to scope each user to. The relevant location in every backend:
+
+| Implementation | File | What to change |
+| --- | --- | --- |
+| py-and-react | [py-and-react/backend/main.py](./py-and-react/backend/main.py) (~line 104) | `auth_payload["parameter_overrides"] = { "salesperson": ... }` |
+| py-and-vue | [py-and-vue/backend/main.py](./py-and-vue/backend/main.py) (~line 104) | `auth_payload["parameter_overrides"] = { "salesperson": ... }` |
+| py-and-angular | [py-and-angular/backend/embed/views.py](./py-and-angular/backend/embed/views.py) (~line 85) | `auth_payload["parameter_overrides"] = { "salesperson": ... }` |
+| node-and-react | [node-and-react/backend/server.js](./node-and-react/backend/server.js) (~line 93) | `authPayload.parameter_overrides = { salesperson: ... }` |
+| node-and-vue | [node-and-vue/backend/server.js](./node-and-vue/backend/server.js) (~line 93) | `authPayload.parameter_overrides = { salesperson: ... }` |
+| node-and-angular | [node-and-angular/backend/server.js](./node-and-angular/backend/server.js) (~line 93) | `authPayload.parameter_overrides = { salesperson: ... }` |
+
+The override is only applied to roles in the `SALES_REPS` set (defined near the top of each of the same files), and the per-persona values come from the `ROLE_PROFILES` map — change these to match your own users and access logic.
 
 ![Embed filter setup with the salesperson parameter override](./assets/embed-filter-setup.png)
 
