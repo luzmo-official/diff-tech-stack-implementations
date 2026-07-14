@@ -13,6 +13,8 @@ This repo contains example implementations of [Luzmo](https://www.luzmo.com/) em
 | [node-and-angular](./node-and-angular) | Node.js (Express) | Angular |
 | [node-and-vue](./node-and-vue) | Node.js (Express) | Vue (Vite) |
 
+More examples are coming in the future with other tech stacks.
+
 ## Prerequisites
 
 Before getting started with any of the implementations, you need to set up the datasets and dashboards in your Luzmo account. Every implementation shares the same Luzmo backend, so this only needs to be done once.
